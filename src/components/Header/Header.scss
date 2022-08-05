@@ -179,5 +179,14 @@
     position: relative;
     top: -168px;
     width: 300px;
+
+    @include mediaMaxWidth {
+      top: 10px;
+    }
+
+    @include mediaMaxWidth($mobileWidth) {
+      float: none;
+      margin: 0 auto;
+    }
   }
 }
