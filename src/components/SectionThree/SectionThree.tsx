@@ -2,7 +2,7 @@ import './SectionThree.scss';
 
 export default function SectionThree() {
   return (
-    <div className="SectionThree">
+    <section className="SectionThree">
       <div className="SectionThree__info">
         <h3 className="SectionThree__title">Live in the Center of All</h3>
         <div className="SectionThree__details">
@@ -18,6 +18,6 @@ export default function SectionThree() {
         </div>
       </div>
       <div className="SectionThree__image" />
-    </div>
+    </section>
   )
 }

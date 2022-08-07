@@ -1,0 +1,59 @@
+@import '../../styles/utils';
+
+.Gallery {
+  @extend %minMaxWidth;
+  @extend %sectionPaddings;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @include mediaMaxWidth($mobileWidth) {
+    padding: 16px $paddingInfoMobile;
+  }
+
+  &__title {
+    @extend %sectionTitleFonts;
+  }
+
+  &__subtitles-wrapper {
+    margin-bottom: 40px;
+  }
+
+  &__subtitles {
+    display: inline-block;
+    max-width: max-content;
+    padding: 2px 4px;
+    margin-right: 10px;
+    transition: background-color 0.5s;
+
+    &--active {
+      background-color: $c-main;
+    }
+  }
+
+  &__images {
+    display: flex;
+  }
+
+  &__image-one,
+  &__image-two,
+  &__image-three {
+    position: relative;
+    z-index: -1;
+
+    width: 33.3%;
+    filter: grayscale(100%);
+    transition: transform 0.5s, filter 0.5s;
+  }
+
+  &__image {
+    &--active {
+      z-index: 1;
+      filter: grayscale(0);
+      transform: scale(1.3);
+    }
+  }
+}
