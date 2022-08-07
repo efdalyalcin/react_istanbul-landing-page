@@ -1,0 +1,17 @@
+@import '../../styles/utils';
+
+.Seperation-bar {
+  &__top {
+    height: 24px;
+    background-color: $c-main;
+  }
+
+  &__point {
+    margin: 0 auto;
+    height: 24px;
+    width: 24px;
+    background-color: $c-main;
+    transform-origin: 0 0;
+    transform: rotate(45deg) translateY(-24px);
+  }
+}

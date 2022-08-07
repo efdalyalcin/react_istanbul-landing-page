@@ -3,7 +3,7 @@
 .Form {
   padding: 12px;
   border-radius: 16px;
-  background-color: $c-title;
+  background-color: $c-main;
   text-align: center;
   color: $c-formTextColor;
   
@@ -63,7 +63,7 @@
   }
 
   &__circle-checkbox:checked {
-    background-color: $c-title;
+    background-color: $c-main;
   }
 
   &__aggrement {
@@ -83,7 +83,7 @@
   &__button {
     width: 100%;
     padding: 4px;
-    color: $c-title;
+    color: $c-main;
     font-weight: bold;
     margin-bottom: 8px;
   }

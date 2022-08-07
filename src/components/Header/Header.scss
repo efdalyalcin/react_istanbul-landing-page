@@ -54,7 +54,7 @@
 
   &__small-titles {
     position: relative;
-    color: $c-title;
+    color: $c-main;
 
     @include mediaMaxWidth($mobileWidth) {
       top: 40%;
@@ -215,7 +215,7 @@
     width: 80px;
 
     border-radius: 16px 16px 0 0;
-    background-color: $c-title;
+    background-color: $c-main;
     border: none;
     color: $c-formTextColor;
 
