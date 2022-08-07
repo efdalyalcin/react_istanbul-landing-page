@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/react_istanbul-landing-page/static/css/main.cae021f0.css",
-    "main.js": "/react_istanbul-landing-page/static/js/main.f8989dd5.js",
+    "main.css": "/react_istanbul-landing-page/static/css/main.32ca3ad6.css",
+    "main.js": "/react_istanbul-landing-page/static/js/main.bef1e4e1.js",
     "static/media/header.png": "/react_istanbul-landing-page/static/media/header.5eb0ce0eb847d9252b8d.png",
+    "static/media/istanbul1.png": "/react_istanbul-landing-page/static/media/istanbul1.bddf5b8f2ab78d3bf0d1.png",
     "static/media/ArquitectaBold.otf": "/react_istanbul-landing-page/static/media/ArquitectaBold.320a694d1715fc553281.otf",
     "static/media/Arquitecta.otf": "/react_istanbul-landing-page/static/media/Arquitecta.9d757049bf327646fe66.otf",
     "static/media/Myanmar1.ttf": "/react_istanbul-landing-page/static/media/Myanmar1.bf0a766d7c4e1e1729b9.ttf",
+    "static/media/bebas-kai.regular.otf": "/react_istanbul-landing-page/static/media/bebas-kai.regular.af73723c32aa51e7b02d.otf",
     "index.html": "/react_istanbul-landing-page/index.html",
-    "main.cae021f0.css.map": "/react_istanbul-landing-page/static/css/main.cae021f0.css.map",
-    "main.f8989dd5.js.map": "/react_istanbul-landing-page/static/js/main.f8989dd5.js.map"
+    "main.32ca3ad6.css.map": "/react_istanbul-landing-page/static/css/main.32ca3ad6.css.map",
+    "main.bef1e4e1.js.map": "/react_istanbul-landing-page/static/js/main.bef1e4e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.cae021f0.css",
-    "static/js/main.f8989dd5.js"
+    "static/css/main.32ca3ad6.css",
+    "static/js/main.bef1e4e1.js"
   ]
 }
