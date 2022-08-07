@@ -61,7 +61,7 @@
     color: $c-main;
 
     @include mediaMaxWidth($mobileWidth) {
-      top: 40%;
+      top: 100px;
     }
 
     &--upper {    
@@ -95,9 +95,9 @@
       @include mediaMaxWidth($mobileWidth) {
         margin-bottom: 4px;
 
-        height: 16px;
-        font-size: 16px;
-        border-radius: 0 0 8px 0;
+        height: 20px;
+        font-size: 20px;
+        border-radius: 0 0 20px 0;
         min-width: $minWidth;
       }
     }
@@ -137,9 +137,9 @@
       }
 
       @include mediaMaxWidth($mobileWidth) {
-        height: 14px;
-        font-size: 14px;
-        border-radius: 6px 0 0 0;
+        height: 16px;
+        font-size: 16px;
+        border-radius: 16px 0 0 0;
         min-width: 240px;
       }
     }

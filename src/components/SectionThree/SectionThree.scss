@@ -1,0 +1,65 @@
+@import '../../styles/utils';
+
+.SectionThree {
+  @extend %minMaxWidth;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 8fr 11fr;
+  grid-template-rows: 1;
+  
+  background-color: $c-sectionBackground;
+
+  @include mediaMaxWidth($mobileWidth) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+  }
+
+  &__info {
+    @extend %sectionPaddings;
+    padding-right: 100px;
+
+    grid-column: 1;
+
+    @include mediaMaxWidth($desktopTabletTransition) {
+      padding-right: 64px;
+    }
+  
+    @include mediaMaxWidth {
+      padding-right: 40px;
+    }
+
+    @include mediaMaxWidth($mobileWidth) {
+      padding: 16px $paddingInfoMobile;
+      grid-row: 1; 
+    }
+  }
+
+  &__title {
+    @extend %sectionTitleFonts;
+    margin-bottom: 12px;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    color: $c-main;
+  }
+  
+  &__image {
+    grid-column: 2;
+
+    background-image: url('../../images/torunlarMap.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mediaMaxWidth($mobileWidth) {
+      grid-column: 1;
+      grid-row: 2; 
+      height: 200px;
+    }
+  }
+}
