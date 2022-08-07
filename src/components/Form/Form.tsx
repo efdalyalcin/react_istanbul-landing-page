@@ -53,6 +53,7 @@ export default function Form() {
           placeholder="Telefon Numaranız *"
           value={telNo}
           onChange={(e) => setTelNo(e.target.value)}
+          required
         />
         <input 
           className="Form__inputs"
@@ -60,6 +61,7 @@ export default function Form() {
           placeholder="Email Adresiniz *"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <input 
           className="Form__inputs"
@@ -107,6 +109,7 @@ export default function Form() {
             type="checkbox" name="aggrement" id="aggrement"
             checked={isAgreed}
             onChange={() => setIsAgreed(!isAgreed)}
+            required
           />
           <label htmlFor="aggrement">
             Aydınlatma metni kapsam ve sınırında Torunlar GYO Anonim Şirketi
