@@ -1,0 +1,117 @@
+@import '../../styles/utils';
+
+.SectionTwo {
+  @extend %sectionPaddings;
+  @extend %minMaxWidth;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+  column-gap: 180px;
+  text-align: end;
+
+  @include mediaMaxWidth($desktopWidth) {
+    column-gap: 144px;
+  }
+
+  @include mediaMaxWidth {
+    column-gap: 48px;
+  }
+
+  @include mediaMaxWidth($mobileWidth) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+    column-gap: unset;
+
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    grid-column: 1;
+    
+    @include mediaMaxWidth {
+      align-self: center;
+    }
+
+    @include mediaMaxWidth($mobileWidth) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  }
+
+  &__image-one,
+  &__image-two {
+    width: 100%;
+    max-width: 464px;
+
+    object-fit: contain;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: scale(1.05);
+
+      @include mediaMaxWidth($mobileWidth) {
+        transform: unset;
+      }
+    }
+  }
+
+  &__image-one {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @include mediaMaxWidth {
+      position: static;
+    }
+
+    @include mediaMaxWidth($mobileWidth) {
+      align-self: center;
+    }
+  }
+
+  &__image-two {
+    position: relative;
+    top: -200px;
+    left: 30%;
+    z-index: 1;
+
+    @include mediaMaxWidth($desktopWidth) {
+      top: -100px;
+    }
+
+    @include mediaMaxWidth {
+      position: static;
+    }
+
+    @include mediaMaxWidth($mobileWidth) {
+      align-self: center;
+    }
+  }
+
+  &__info {
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    color: $c-main;
+
+    @include mediaMaxWidth($mobileWidth) {
+      grid-column: 1;
+      grid-row: 1;
+      padding: 0 20px;
+    }
+  }
+
+  &__title {
+    @extend %sectionTitleFonts;
+
+    align-self: flex-end;
+  }
+}

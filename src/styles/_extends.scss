@@ -22,3 +22,21 @@
     padding: 16px 0;
   }
 }
+
+%sectionTitleFonts {
+  max-width: 400px;
+  font-size: 56px;
+  color: $c-sectionTitles;
+
+  @include mediaMaxWidth($contentMaxWidth) {
+    font-size: 48px;
+  }
+
+  @include mediaMaxWidth($desktopWidth) {
+    font-size: 40px;
+  }
+
+  @include mediaMaxWidth($desktopTabletTransition) {
+    font-size: 32px;
+  }
+}

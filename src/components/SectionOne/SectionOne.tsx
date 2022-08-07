@@ -6,7 +6,7 @@ export default function SectionOne() {
     <section className="Section-one">
       <div className="Section-one__info">
         <h3 className="Section-one__title">A New Perspective to Istanbul</h3>
-        <p>
+        <p className="Section-one__paragraphs">
           Inspired by this connecting feature of Istanbul, where the continents
           of Asia and Europe, the west and the east, the old and the new,
           the modern and the traditional, the universal and the local
@@ -16,7 +16,7 @@ export default function SectionOne() {
           breath and a new perspective to Istanbul,
           the world’s most colorful and cosmopolitan city.
         </p>
-        <p>
+        <p className="Section-one__paragraphs">
           Welcome to the brilliant world of Torun Center rising up with our
           philosophy “WORTH TO INVEST, WORTH TO LIVE” in Mecidiyeköy located
           in the center of Istanbul, by the side of the Bosporus
