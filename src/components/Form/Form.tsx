@@ -10,6 +10,7 @@ export default function Form() {
   const [isSms, setIsSms] = useState(false);
   const [isPosta, setIsPosta] = useState(false);
   const [isAgreed, setIsAgreed] = useState(false);
+  // the formSubmit is the object which will be sent to the server
   const [formSubmit, setFormSubmit] = useState({});
 
   const submitValidForm = (event: React.FormEvent<HTMLFormElement>) => {
@@ -52,6 +53,7 @@ export default function Form() {
           placeholder="Telefon Numaranız *"
           value={telNo}
           onChange={(e) => setTelNo(e.target.value)}
+          required
         />
         <input 
           className="Form__inputs"
@@ -59,6 +61,7 @@ export default function Form() {
           placeholder="Email Adresiniz *"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <input 
           className="Form__inputs"
@@ -106,6 +109,7 @@ export default function Form() {
             type="checkbox" name="aggrement" id="aggrement"
             checked={isAgreed}
             onChange={() => setIsAgreed(!isAgreed)}
+            required
           />
           <label htmlFor="aggrement">
             Aydınlatma metni kapsam ve sınırında Torunlar GYO Anonim Şirketi

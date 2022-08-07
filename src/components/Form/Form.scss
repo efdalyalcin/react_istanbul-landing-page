@@ -1,25 +1,25 @@
 @import '../../styles/utils';
 
 .Form {
-  padding: 20px;
+  padding: 12px;
   border-radius: 16px;
-  background-color: $c-title;
+  background-color: $c-main;
   text-align: center;
   color: $c-formTextColor;
   
   &__title {
-    margin-bottom: 8px;
+    margin-bottom: 2px;
     font-family: "Arquitecta Bold", sans-serif;
   }
 
   &__inputs {
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
 
     border: none;
     border-bottom: 1px solid $c-formTextColor;
     background-color: transparent;
-    line-height: 24px;
+    line-height: 20px;
     color: $c-formTextColor;
     
     &::placeholder{
@@ -63,13 +63,13 @@
   }
 
   &__circle-checkbox:checked {
-    background-color: $c-title;
+    background-color: $c-main;
   }
 
   &__aggrement {
     display: flex;
     align-items: baseline;
-    gap: 4px;
+    gap: 2px;
     text-align: left;
     font-size: 13px;
     margin-bottom: 8px;
@@ -77,13 +77,13 @@
 
   &__aggrement-checkbox {
     position: relative;
-    top: 4px;
+    top: 2px;
   }
 
   &__button {
     width: 100%;
-    padding: 8px;
-    color: $c-title;
+    padding: 4px;
+    color: $c-main;
     font-weight: bold;
     margin-bottom: 8px;
   }

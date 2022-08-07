@@ -1,0 +1,42 @@
+%minMaxWidth {
+  max-width: $maxWidth;
+  min-width: $minWidth;
+}
+
+%sectionPaddings {
+  padding: 72px 240px;
+
+  @include mediaMaxWidth($contentMaxWidth) {
+    padding: 72px 120px;
+  }
+
+  @include mediaMaxWidth($desktopTabletTransition) {
+    padding: 48px 64px;
+  }
+
+  @include mediaMaxWidth {
+    padding: 24px 40px;
+  }
+
+  @include mediaMaxWidth($mobileWidth) {
+    padding: 16px 0;
+  }
+}
+
+%sectionTitleFonts {
+  max-width: 400px;
+  font-size: 56px;
+  color: $c-sectionTitles;
+
+  @include mediaMaxWidth($contentMaxWidth) {
+    font-size: 48px;
+  }
+
+  @include mediaMaxWidth($desktopWidth) {
+    font-size: 40px;
+  }
+
+  @include mediaMaxWidth($desktopTabletTransition) {
+    font-size: 32px;
+  }
+}

@@ -1,11 +1,17 @@
 // width
 $maxWidth: 1920px;
 $contentMaxWidth: 1440px;
+$desktopWidth: 1280px;
 $desktopTabletTransition: 960px;
 $tabletWidth: 768px;
 $mobileWidth: 520px;
 $minWidth:320px;
 
 // color
-$c-title: #4b575d;
+$c-main: #4b575d;
+$c-sectionTitles: #39454b;
 $c-formTextColor: #fff;
+$c-sectionBackground: #f4f4f4;
+
+// padding
+$paddingInfoMobile: 20px;

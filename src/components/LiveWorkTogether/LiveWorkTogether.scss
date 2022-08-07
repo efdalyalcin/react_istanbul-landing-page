@@ -1,0 +1,32 @@
+@import '../../styles/utils';
+
+.LiveWork {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 0 auto;
+
+  @extend %minMaxWidth;
+  @extend %sectionPaddings;
+
+  background-color: $c-main;
+  font-family: "Arquitecta", sans-serif;
+  font-size: 76px;
+  line-height: 0.1em;
+
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+
+  @include mediaMaxWidth($desktopWidth) {
+    font-size: 64px;
+  }
+
+  @include mediaMaxWidth($desktopTabletTransition) {
+    font-size: 48px;
+  }
+
+  @include mediaMaxWidth {
+    font-size: 32px;
+  }
+}

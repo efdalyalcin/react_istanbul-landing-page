@@ -3,8 +3,9 @@
 .Header {
   position: relative;
   height: 100vh;
-  max-width: $maxWidth;
   margin: 0 auto;
+
+  @extend %minMaxWidth;
 
   background-image: url('../../images/header.png');
   background-position: bottom;
@@ -38,10 +39,13 @@
   }
 
   &__title {
-    font-size: 16vw;
-    // line-height: 100px;
+    font-size: 340px;
     -webkit-text-stroke: 1px white;
     color: transparent;
+
+    @include mediaMaxWidth($maxWidth) {
+      font-size: 16vw;
+    }
 
     @include mediaMaxWidth {
       font-size: 14vw;
@@ -54,10 +58,10 @@
 
   &__small-titles {
     position: relative;
-    color: $c-title;
+    color: $c-main;
 
     @include mediaMaxWidth($mobileWidth) {
-      top: 40%;
+      top: 100px;
     }
 
     &--upper {    
@@ -91,9 +95,9 @@
       @include mediaMaxWidth($mobileWidth) {
         margin-bottom: 4px;
 
-        height: 16px;
-        font-size: 16px;
-        border-radius: 0 0 8px 0;
+        height: 20px;
+        font-size: 20px;
+        border-radius: 0 0 20px 0;
         min-width: $minWidth;
       }
     }
@@ -133,9 +137,9 @@
       }
 
       @include mediaMaxWidth($mobileWidth) {
-        height: 14px;
-        font-size: 14px;
-        border-radius: 6px 0 0 0;
+        height: 16px;
+        font-size: 16px;
+        border-radius: 16px 0 0 0;
         min-width: 240px;
       }
     }
@@ -151,6 +155,7 @@
     font-family: "MyanmarMN", sans-serif;
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
 
     @include mediaMaxWidth($desktopTabletTransition) {
       left: 16vw;
@@ -164,8 +169,11 @@
       display: none;
     }
 
-    &--lines {
-      text-align: center;
+    &-link {
+      color: $c-main;
+    }
+
+    &-line {
       white-space: nowrap;
     }
 
@@ -175,10 +183,16 @@
   }
 
   &__Form {
+    display: flex;
     float: right;
     position: relative;
     top: -168px;
     width: 300px;
+    transition: transform 1s ease-in-out;
+
+    @include mediaMaxWidth($desktopTabletTransition) {
+      top: -144px;
+    }
 
     @include mediaMaxWidth {
       top: 10px;
@@ -186,7 +200,35 @@
 
     @include mediaMaxWidth($mobileWidth) {
       float: none;
-      margin: 0 auto;
+      top: 120px;
+      left: -288px;
+      width: 288px;
+    }
+
+    &--hidden {
+      transform: translateX(288px);
+    }
+  }
+
+  &__Form-button {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: -32px;
+
+    height: 32px;
+    width: 80px;
+
+    border-radius: 16px 16px 0 0;
+    background-color: $c-main;
+    border: none;
+    color: $c-formTextColor;
+
+    transform-origin: 0 80px;
+    transform: rotate(90deg);
+
+    @include mediaMaxWidth($mobileWidth) {
+      display: unset;
     }
   }
 }
