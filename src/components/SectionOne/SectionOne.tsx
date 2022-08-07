@@ -3,7 +3,7 @@ import SectionOneImg from '../../images/istanbul1.png';
 
 export default function SectionOne() {
   return (
-    <div className="Section-one">
+    <section className="Section-one">
       <div className="Section-one__info">
         <h3 className="Section-one__title">A New Perspective to Istanbul</h3>
         <p>
@@ -30,6 +30,6 @@ export default function SectionOne() {
           alt="istanbul galata tower" 
         />
       </div>
-    </div>
+    </section>
   )
 }

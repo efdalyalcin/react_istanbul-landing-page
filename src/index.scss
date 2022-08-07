@@ -4,9 +4,18 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
 p {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

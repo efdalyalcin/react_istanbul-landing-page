@@ -28,12 +28,14 @@ export default function Header() {
           <h2 className="Header__small-titles--upper">A PRIVILEGED LIFE WITH A</h2>
           <h2 className="Header__small-titles--lower">UNIQUE ISTANBUL VIEW</h2>
           <div className="Header__additional-info">
-            <p className="Header__additional-info--lines">
+            <a 
+              href="#live-work-together"
+              className="Header__additional-info-link">
               <span className="Header__additional-info--words">LIVE</span>
               <span className="Header__additional-info--words">WORK</span>
               <span>TOGETHER</span>
-            </p>
-            <p className="Header__additional-info--lines">RESIDANCE - OFFICE</p>
+            </a>
+            <p className="Header__additional-info-line">RESIDANCE - OFFICE</p>
           </div>
         </div>
 

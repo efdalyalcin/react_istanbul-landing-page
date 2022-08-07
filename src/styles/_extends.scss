@@ -2,3 +2,23 @@
   max-width: $maxWidth;
   min-width: $minWidth;
 }
+
+%sectionPaddings {
+  padding: 72px 240px;
+
+  @include mediaMaxWidth($contentMaxWidth) {
+    padding: 72px 120px;
+  }
+
+  @include mediaMaxWidth($desktopTabletTransition) {
+    padding: 48px 64px;
+  }
+
+  @include mediaMaxWidth {
+    padding: 24px 40px;
+  }
+
+  @include mediaMaxWidth($mobileWidth) {
+    padding: 16px 0;
+  }
+}
