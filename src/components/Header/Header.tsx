@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.scss';
 import logo from '../../images/torunlarLogo.png';
 import Form from '../Form/Form';
+import cn from 'classnames';
 
 export default function Header() {
+  const [isFormHidden, setIsFormHidden] = useState(false);
+  const handleFormHidden = () => {
+    setIsFormHidden(!isFormHidden);
+  };
+
+  console.log(isFormHidden)
+
   return (
     <header className="Header">
       <div className="Header__title-wrapper">
@@ -29,8 +37,15 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="Header__Form">
+        <div className={cn('Header__Form', {'Header__Form--hidden': isFormHidden})}>
           <Form />
+          <button
+            className="Header__Form-button"
+            type="button"
+            onClick={handleFormHidden}
+          >
+            Form
+          </button>
         </div>
       </div>
     </header>

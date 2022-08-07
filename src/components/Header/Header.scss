@@ -175,10 +175,12 @@
   }
 
   &__Form {
+    display: flex;
     float: right;
     position: relative;
     top: -168px;
     width: 300px;
+    transition: transform 1s ease-in-out;
 
     @include mediaMaxWidth {
       top: 10px;
@@ -187,6 +189,29 @@
     @include mediaMaxWidth($mobileWidth) {
       float: none;
       margin: 0 auto;
+      top: 120px;
     }
+
+    &--hidden {
+      transform: translateX(-300%);
+    }
+  }
+
+  &__Form-button {
+    // display: none;
+    position: absolute;
+    top: 20px;
+    right: -32px;
+
+    height: 32px;
+    width: 80px;
+
+    border-radius: 16px 16px 0 0;
+    background-color: $c-title;
+    border: none;
+    color: $c-formTextColor;
+
+    transform-origin: 0 80px;
+    transform: rotate(90deg);
   }
 }

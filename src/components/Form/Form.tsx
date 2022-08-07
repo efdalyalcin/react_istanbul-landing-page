@@ -10,6 +10,7 @@ export default function Form() {
   const [isSms, setIsSms] = useState(false);
   const [isPosta, setIsPosta] = useState(false);
   const [isAgreed, setIsAgreed] = useState(false);
+  // the formSubmit is the object which will be sent to the server
   const [formSubmit, setFormSubmit] = useState({});
 
   const submitValidForm = (event: React.FormEvent<HTMLFormElement>) => {
