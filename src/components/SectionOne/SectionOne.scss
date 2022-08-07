@@ -1,5 +1,82 @@
 @import '../../styles/utils';
 
 .Section-one {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  grid-template-rows: auto;
+  gap: 56px;
+  align-items: center;
+
+  width: 100%;
   padding: 72px 240px;
+  margin: 0 auto;
+
+  @extend %minMaxWidth;
+
+  @include mediaMaxWidth($contentMaxWidth) {
+    padding: 72px 120px;
+    gap: 40px;
+  }
+
+  @include mediaMaxWidth($desktopTabletTransition) {
+    padding: 48px 64px;
+    gap: 36px;
+  }
+
+  @include mediaMaxWidth {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+    padding: 24px 40px;
+    gap: 24px;
+  }
+
+  @include mediaMaxWidth($mobileWidth) {
+    padding: 16px 0;
+    gap: 16px;
+  }
+
+  &__info {
+    grid-column: 1;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @include mediaMaxWidth {
+      grid-row: 1;
+    }
+
+    @include mediaMaxWidth($mobileWidth) {
+      padding: 0 20px;
+    }
+  }
+
+  &__title {
+    max-width: 400px;
+    font-size: 56px;
+
+    @include mediaMaxWidth($contentMaxWidth) {
+      font-size: 48px;
+    }
+
+    @include mediaMaxWidth($desktopTabletTransition) {
+      font-size: 36px;
+    }
+  }
+
+  &__image-wrapper {
+    grid-column: 2;
+
+    @include mediaMaxWidth {
+      grid-column: 1;
+      grid-row: 2;
+    }
+  }
+
+  &__image {
+    max-width: 786px;
+    width: 100%;
+    object-fit: contain;
+    min-width: 320px;
+  }
 }
