@@ -10,8 +10,6 @@ export default function Header() {
     setIsFormHidden(!isFormHidden);
   };
 
-  console.log(isFormHidden)
-
   return (
     <header className="Header">
       <div className="Header__title-wrapper">

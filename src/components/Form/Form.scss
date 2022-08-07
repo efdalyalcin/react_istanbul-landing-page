@@ -88,10 +88,23 @@
     margin-bottom: 8px;
   }
 
+  &__phone-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
   &__phone {
+    display: block;
     text-decoration: none;
     color: $c-formTextColor;
     font-weight: bolder;
     font-size: 20px;
+  }
+
+  &__icon {
+    width: 12px;
+    height: 16px;
   }
 }
