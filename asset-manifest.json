@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/react_istanbul-landing-page/static/css/main.60fec9ae.css",
-    "main.js": "/react_istanbul-landing-page/static/js/main.bc17fd3b.js",
+    "main.css": "/react_istanbul-landing-page/static/css/main.1264f702.css",
+    "main.js": "/react_istanbul-landing-page/static/js/main.c6f78354.js",
     "static/media/header.png": "/react_istanbul-landing-page/static/media/header.5eb0ce0eb847d9252b8d.png",
+    "static/media/gallery3.png": "/react_istanbul-landing-page/static/media/gallery3.2141db0143bc9ab99db0.png",
+    "static/media/gallery1.png": "/react_istanbul-landing-page/static/media/gallery1.8088f63189ca07df46f4.png",
+    "static/media/gallery2.png": "/react_istanbul-landing-page/static/media/gallery2.1e42ab0c8046288060d8.png",
     "static/media/istanbul1.png": "/react_istanbul-landing-page/static/media/istanbul1.bddf5b8f2ab78d3bf0d1.png",
     "static/media/torunlarImg2.png": "/react_istanbul-landing-page/static/media/torunlarImg2.f93a34726f131ee3760f.png",
     "static/media/torunlarImg1.png": "/react_istanbul-landing-page/static/media/torunlarImg1.788302fb34fe7e7b9352.png",
+    "static/media/torunlarMap.png": "/react_istanbul-landing-page/static/media/torunlarMap.4c6f9f47bf6a2fcc4d55.png",
     "static/media/ArquitectaBold.otf": "/react_istanbul-landing-page/static/media/ArquitectaBold.320a694d1715fc553281.otf",
     "static/media/Arquitecta.otf": "/react_istanbul-landing-page/static/media/Arquitecta.9d757049bf327646fe66.otf",
     "static/media/Myanmar1.ttf": "/react_istanbul-landing-page/static/media/Myanmar1.bf0a766d7c4e1e1729b9.ttf",
     "static/media/bebas-kai.regular.otf": "/react_istanbul-landing-page/static/media/bebas-kai.regular.af73723c32aa51e7b02d.otf",
     "index.html": "/react_istanbul-landing-page/index.html",
-    "main.60fec9ae.css.map": "/react_istanbul-landing-page/static/css/main.60fec9ae.css.map",
-    "main.bc17fd3b.js.map": "/react_istanbul-landing-page/static/js/main.bc17fd3b.js.map"
+    "main.1264f702.css.map": "/react_istanbul-landing-page/static/css/main.1264f702.css.map",
+    "main.c6f78354.js.map": "/react_istanbul-landing-page/static/js/main.c6f78354.js.map"
   },
   "entrypoints": [
-    "static/css/main.60fec9ae.css",
-    "static/js/main.bc17fd3b.js"
+    "static/css/main.1264f702.css",
+    "static/js/main.c6f78354.js"
   ]
 }
