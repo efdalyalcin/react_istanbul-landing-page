@@ -182,6 +182,10 @@
     width: 300px;
     transition: transform 1s ease-in-out;
 
+    @include mediaMaxWidth($desktopTabletTransition) {
+      top: -144px;
+    }
+
     @include mediaMaxWidth {
       top: 10px;
     }
