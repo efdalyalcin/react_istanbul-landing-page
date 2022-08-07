@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Form.scss';
+import whitePhoneIcon from '../../images/whitePhoneIcon.png';
 
 export default function Form() {
   const [name, setName] = useState('');
@@ -121,12 +122,15 @@ export default function Form() {
           FORMU GÖNDER
         </button>
 
-        <a 
-          href="tel: +902122674747"
-          className="Form__phone"
-        >
-          0212 267 47 47
-        </a>
+        <div className="Form__phone-wrapper">
+          <img src={whitePhoneIcon} alt="phone icon" className="Form__icon" />
+          <a 
+            href="tel: +902122674747"
+            className="Form__phone"
+          >
+            0212 267 47 47
+          </a>
+        </div>
       </form>
     </div>
   )

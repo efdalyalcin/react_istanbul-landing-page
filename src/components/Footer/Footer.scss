@@ -1,0 +1,83 @@
+@import '../../styles/utils';
+
+.Footer {
+  @extend %minMaxWidth;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1;
+
+  background-color: $c-sectionBackground;
+
+  @include mediaMaxWidth($mobileWidth) {
+    display: block;
+  }
+
+  &__map {
+    grid-column: 1;
+    width: 100%;
+    height: 300px;
+
+    background-image: url("../../images/footerMap.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mediaMaxWidth($mobileWidth) {
+      display: none;
+    }
+  }
+
+  &__title {
+    @extend %sectionTitleFonts;
+    margin-bottom: 12px;
+  }
+
+  &__contact {
+    position: relative;
+
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    height: 300px;
+
+    @extend %sectionPaddings;
+    padding-left: 36px;
+  }
+
+  &__links {
+    display: block;
+
+    color: $c-main;
+    transition: color .5s;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  &__icon-tel {
+    height: 19px;
+    width: 19px;
+  }
+
+  &__icon-mail {
+    height: 15px;
+    width: 21px;
+  }
+
+  &__icon-address {
+    height: 26px;
+    width: 18px;
+  }
+
+  &__tel,
+  &__mail,
+  &__address {
+    display: flex;
+    gap: 16px;
+  }
+}

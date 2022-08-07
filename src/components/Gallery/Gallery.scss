@@ -3,6 +3,7 @@
 .Gallery {
   @extend %minMaxWidth;
   @extend %sectionPaddings;
+  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
