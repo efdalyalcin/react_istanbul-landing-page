@@ -6,13 +6,20 @@ import image2 from '../../images/gallery2.png';
 import image3 from '../../images/gallery3.png';
 
 const galleryItems = ['INSIDE IMAGES', 'OUTSIDE IMAGES', 'FLOOR PLAN'];
-const galleryImages = [image1, image2, image3];
 
 export default function Gallery() {
   const [activeLink, setActiveLink] = useState(0);
-  const [isImageOneActive, setIsImageOneActive] = useState(false);
-  const [isImageTwoActive, setIsImageTwoActive] = useState(true);
-  const [isImageThreeActive, setIsImageThreeActive] = useState(false);
+  const [galleryImages, setGalleryImages] = useState<string[]>([image1, image2, image3])
+
+  const rightClick = () => {
+    const img = galleryImages;
+    setGalleryImages([img[2], img[0], img[1]]);
+  };
+
+  const leftClick = () => {
+    const img = galleryImages;
+    setGalleryImages([img[1], img[2], img[0]]);
+  };
 
   return (
     <section className="Gallery" id="Gallery">
@@ -30,23 +37,25 @@ export default function Gallery() {
         ))}
       </div>
       <div className="Gallery__images">
-        <img 
-          id="image-one"
-          src={image1} 
-          alt="torunlar tower inside" 
-          className={cn("Gallery__image-one", {'Gallery__image--active': isImageOneActive })}
+        <button 
+          type="button"
+          onClick={leftClick}
+          className="Gallery__left-button"
         />
-        <img 
-          id="image-two"
-          src={image2} 
-          alt="torunlar tower inside" 
-          className={cn("Gallery__image-two", {'Gallery__image--active': isImageTwoActive })}
-        />
-        <img 
-          id="image-three"
-          src={image3} 
-          alt="torunlar tower inside" 
-          className={cn("Gallery__image-three", {'Gallery__image--active': isImageThreeActive })}
+        
+        {galleryImages.map((image, index) => (
+          <img 
+            key={index}
+            src={image} 
+            alt="torunlar tower inside" 
+            className={cn(`Gallery__image-${index}`, {'Gallery__image--active': index === 1 })}
+          />
+        ))}
+
+        <button 
+          type="button"
+          onClick={rightClick}
+          className="Gallery__right-button"
         />
       </div>
     </section>

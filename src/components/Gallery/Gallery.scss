@@ -29,24 +29,29 @@
     margin-right: 10px;
     transition: background-color 0.5s;
 
+    @include mediaMaxWidth($mobileWidth) {
+      font-size: 12px;
+      margin-right: 4px;
+    }
+
     &--active {
       background-color: $c-main;
     }
   }
 
   &__images {
+    position: relative;
     display: flex;
   }
 
-  &__image-one,
-  &__image-two,
-  &__image-three {
+  &__image-0,
+  &__image-1,
+  &__image-2 {
     position: relative;
     z-index: -1;
 
     width: 33.3%;
     filter: grayscale(100%);
-    transition: transform 0.5s, filter 0.5s;
   }
 
   &__image {
@@ -55,5 +60,39 @@
       filter: grayscale(0);
       transform: scale(1.3);
     }
+  }
+
+  &__left-button {
+    position: absolute;
+    top: 45%;
+    left: 1%;
+    height: 16px;
+    width: 16px;
+
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    background-color: transparent;
+    
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  &__right-button {
+    position: absolute;
+    top: 45%;
+    right: 1%;
+    height: 16px;
+    width: 16px;
+    
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    background-color: transparent;
+    
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
   }
 }
