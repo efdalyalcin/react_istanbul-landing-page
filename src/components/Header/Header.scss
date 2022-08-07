@@ -188,17 +188,21 @@
 
     @include mediaMaxWidth($mobileWidth) {
       float: none;
-      margin: 0 auto;
       top: 120px;
+      left: -300px;
+    }
+
+    @include mediaMaxWidth($minWidth) {
+      width: 288px;
     }
 
     &--hidden {
-      transform: translateX(-300%);
+      transform: translateX(300px);
     }
   }
 
   &__Form-button {
-    // display: none;
+    display: none;
     position: absolute;
     top: 20px;
     right: -32px;
@@ -213,5 +217,9 @@
 
     transform-origin: 0 80px;
     transform: rotate(90deg);
+
+    @include mediaMaxWidth($mobileWidth) {
+      display: unset;
+    }
   }
 }
